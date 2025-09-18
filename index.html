@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Decrypto Multiplayer</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="firebase.js"></script>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <div id="app">
+    <div id="lobbyScreen" class="screen">
+      <h1>Decrypto Online</h1>
+      <button id="createGameBtn">Create Game</button>
+      <input id="joinCodeInput" placeholder="Enter Game ID" />
+      <button id="joinGameBtn">Join Game</button>
+    </div>
+
+    <div id="teamScreen" class="screen" style="display:none;">
+      <h2>Choose Your Team</h2>
+      <button id="joinWhiteBtn">Join White Team</button>
+      <button id="joinBlackBtn">Join Black Team</button>
+    </div>
+
+    <div id="gameScreen" class="screen" style="display:none;">
+      <div class="page-wrapper">
+        <div class="page-container" id="usPages"></div>
+        <div class="page-container" id="themPages" style="display:none;"></div>
+      </div>
+      <button id="logBtn">📜 Log</button>
+    </div>
+
+    <div id="logModal" class="modal">
+      <div class="modal-content">
+        <span class="close">&times;</span>
+        <div id="logContent"></div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

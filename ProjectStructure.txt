@@ -1,0 +1,8 @@
+decrypto-game/
+│
+├── index.html
+├── style.css
+├── app.js
+├── wordlist.txt
+├── firebase.js
+└── README.md
